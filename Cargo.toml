@@ -1,0 +1,27 @@
+[package]
+name = "btrader"
+version = "0.2.0"
+authors = ["Gabriel Gazola Milan <gabriel.gazola@poli.ufrj.br>"]
+edition = "2018"
+description = "Arbitrage trading bot for Binance"
+homepage = "https://github.com/gabriel-milan/btrader"
+repository = "https://github.com/gabriel-milan/btrader"
+license="GPL-3.0"
+keywords=["bot", "algotrading", "cryptocurrencies", "binance", "arbitrage"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+binance = "0.11.1"
+serde = { version = "1.0" }
+serde_json = { version = "1.0" }
+rayon = "1.5"
+indicatif = "0.15"
+console = "0.13"
+telegram-bot = "0.8"
+futures="0.3"
+tokio = { version = "0.2.23", features = ["macros", "io-util"] }
+
+[lib]
+name = "btrader"
+path = "src/lib.rs"

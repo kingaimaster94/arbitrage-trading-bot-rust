@@ -1,0 +1,21 @@
+{
+  "api_key": "your-api-key-here",
+  "api_secret": "your-api-secret-here",
+
+  "investment_base" : "BTC",
+  "investment_min" : 0.0010,
+  "investment_max" : 0.0015,
+  "investment_step" : 0.0001,
+
+  "trading_enabled" : false,
+  "trading_execution_cap" : 1,
+  "trading_taker_fee" : 0.1,
+  "trading_profit_threshold" : 0.15,
+  "trading_age_threshold" : 100,
+
+  "depth_size" : 20,
+
+  "telegram_enabled" : false,
+  "telegram_token" : "your-telegram-bot-token",
+  "telegram_user_id" : 0
+}
